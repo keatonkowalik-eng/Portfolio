@@ -209,26 +209,3 @@ public class TraitsController
     }
 
 }
-
-[System.Serializable]
-public struct Traits
-{
-    public UpgradeAttribute<int> health;
-    public UpgradeAttribute<float> healRate;
-
-    public UpgradeAttribute<float> speed;
-    public UpgradeAttribute<float> fireRate;
-
-    public UpgradeAttribute<int> damage;
-    public UpgradeAttribute<float> knockback;
-    public UpgradeAttribute<float> bulletSpeed;
-    public UpgradeAttribute<float> explosiveRange;
-}
-
-[System.Serializable]
-public struct UpgradeAttribute<T>
-{
-    public T amount;
-    public T upgradeAmount;
-    public int level;
-}
